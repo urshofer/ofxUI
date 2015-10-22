@@ -497,7 +497,7 @@ void ofxUIDropDownList::loadState(ofxXmlSettings *XML)
 {
     selected.clear();
     selectedIndeces.clear();
-    singleSelected = nullptr;
+    singleSelected = NULL;
     
     int value = XML->getValue("Open", (isOpen() ? 1 : 0), 0);
     if(value) { open(); } else { close(); }
